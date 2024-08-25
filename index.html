@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHA BRAND</title>
+    <link rel="stylesheet" href="myWebsite.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="assets/test.svg" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li>
+                <a href="#" id="productLink">PRODUCTS</a>
+                <!-- Dropdown for Product Sections -->
+                <ul id="productDropdown" class="dropdown-content">
+                    <li><a href="mensapparels/mens.html">Men's Apparel</a></li>
+                    <li><a href="#womens-apparel">Women's Apparel</a></li>
+                    <li><a href="#kids-apparel">Kids' Apparel</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#cart">CART</a></li>
+        </ul>
+        <ul class="nav-linkss">
+                <li><a href="login.html" id="loginId">LOGIN</a></li>
+                 <li><a href="signup.html">SIGNUP</a></li>
+            
+        </ul>
+    </nav>
+    <div class="search-container">
+        <input type='text' class="search-bar" id="searchbar" placeholder="search....">
+        <button class="clear-btn" id="clearbtn">search</button>
+    </div>
+
+
+   
+        
+        <!-- Mobile Menu Icon -->
+        <div class="mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+
+
+
+    <script src="navbar.js"></script>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

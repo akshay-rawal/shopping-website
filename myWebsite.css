@@ -1,0 +1,296 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial,sans-serif;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding:10px 20px;
+}
+
+
+    
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 50px; 
+}
+.nav-links li{
+    margin-right: 20px;
+}
+.nav-links li a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px,50px;
+    display: block;
+    
+}
+.mobiles
+{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.mobiles .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #a23232;
+    margin:4px 0px;
+}
+
+
+@media (max-width:768px){
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:60px;
+        left:0;
+        background-color: #333;
+    }
+}
+
+    .nav-links .home {
+        margin-left: auto; /* Pushes the Home item to the right */
+        margin-right: 0; /* Removes the right margin */
+    }
+    
+    
+.mobiles{
+    display: flex;
+}
+
+.nav-links.active{
+
+    display: flex;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 280px;
+    
+}
+
+.search-bar{
+    width:230px;
+    height: 32px;
+    border-radius: 10px;
+    border:2px solid black;
+    padding:0px 15px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.search-bar:focus{
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);}
+
+    .clear-btn{
+        position: absolute;
+        
+        top:42px;
+        margin-right: -130px;
+        cursor: pointer;
+       font-size: 16px;
+      background-color: transparent;
+      border: 2px solid black;
+      border-radius: 5px;
+      width: 80px;
+      
+
+    }
+    .clear-btn:focus{
+        border-color: rgb(210, 38, 38);
+        box-shadow: 0 4px 8px hsla(0, 87%, 39%, 0.2);}
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo-img{
+        width: 50px;
+    }
+
+    .nav-linkss{
+        list-style: none;
+        display: flex;
+        margin-left: auto; /* Pushes the login/signup to the right */
+    }
+    .nav-linkss li{
+        margin-left: 20px;}
+
+
+        .nav-linkss li a{
+            color:white;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 5px,50px;
+            display: block;
+            
+        }
+        @media (max-width:768px){
+            .nav-linkss{
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top:60px;
+                left:0;
+                background-color: #333;
+            }
+        }
+     /* login page style */
+        .login-container{
+         width: 300px;
+         margin: 100px auto;
+         border: 1px solid #ccc;
+         box-shadow: 0px 0px 0px rgba(0,0,0,1);
+         background-color: #f9f9f9;
+         padding: 25px;
+        }
+
+        .login-container h2{
+            text-align:center;
+            margin-bottom: 15px;
+        }
+        .login-container label{
+            display: block;
+
+        }
+
+.login-container input[type="text"],
+.login-container input[type = "password"]{
+    width:100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+.login-container input[type = "submit"]
+{
+    width: 22%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+.login-container     input[type="submit"]:hover {
+    background-color: #45a049;
+}
+div a {
+    margin-left: 8%;
+    text-align: center;
+
+    color: black;
+    text-decoration: none; /* Removes the underline from the link */
+
+}
+
+div a:hover     {
+    text-decoration:none;
+}
+
+
+
+/* signup page styles */
+.signup-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.signup-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional Back to Home Link */
+div a {
+    
+    display: block;
+    text-align: center;
+    top: 80px;  /* Moves the link 10px upwards */
+    left: 10px; /* Moves the link 10px to the left */
+    color: black;
+    position: absolute;
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+.signup-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px; /* Add a little margin from the product link */
+}
+
+.dropdown-content li {
+    list-style-type: none;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
