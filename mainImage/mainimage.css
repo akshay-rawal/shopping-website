@@ -1,0 +1,33 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 60px;
+}
+
+.image-item {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}
+
+.image-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
