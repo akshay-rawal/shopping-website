@@ -1,0 +1,29 @@
+
+
+.carousel {
+
+   
+}
+.slides{
+
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Three columns, each taking up 1 fraction of the available space */
+    gap: 0; /* No gap between images */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent any overflow */
+     margin-top: 100px;
+
+}
+.slides img {
+    height: 50%; /* Set a fixed height */
+    width: 60%; /* Keep the aspect ratio intact */
+    object-fit: cover; /* Cover the container area while maintaining aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+    transition: transform 0.5s ease; /* Optional: Smooth transition on hover */
+
+}
+.carousel img:hover {
+    transform:scale(1.05);
+}

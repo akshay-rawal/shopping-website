@@ -1,6 +1,6 @@
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr );
     gap: 20px;
     justify-items: center;
     margin-top: 60px;
@@ -9,17 +9,20 @@
 .image-item {
     position: relative;
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .image-img {
     width: 100%;
-    height: auto;
+    height: 220px;
     border-radius: 8px;
+    object-fit: cover;/* Ensures images cover the area without stretching */
+
 }
 
 .image-description {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -31,3 +34,7 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+/* recommended css */
+
+
