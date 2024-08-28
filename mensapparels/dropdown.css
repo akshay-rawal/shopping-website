@@ -1,29 +1,68 @@
+/* Container for the carousel */
+body{
+    background: radial-gradient(circle, #ff7e5f, #deb291); /* Gradient from pink to orange in a circular pattern */
+
+}
 
 
 .carousel {
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden;
+    
+}
 
+/* Flex container for slides */
+.slides {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+/* Individual slide */
+.slide {
+    position: relative;
+    
+}
+
+/* Image styling */
+.slide img {
+    width: 50%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+    margin-left: 50px;
+    margin-top: 50px;
+    
    
 }
-.slides{
 
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(3, 1fr); /* Three columns, each taking up 1 fraction of the available space */
-    gap: 0; /* No gap between images */
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent any overflow */
-     margin-top: 100px;
+/* Controls styling */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Space between controls */
+    width: 8px; /* Fixed width for controls */
+    height: 10px; /* Fixed height for controls */
+  
+    padding: 5px; /* Padding around the controls */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 18px; /* Space between image and controlsss */
+    
+    margin-left: 35%;
+}
 
+/* Button styling */
+.add, .remove {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
-.slides img {
-    height: 50%; /* Set a fixed height */
-    width: 60%; /* Keep the aspect ratio intact */
-    object-fit: cover; /* Cover the container area while maintaining aspect ratio */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
-    transition: transform 0.5s ease; /* Optional: Smooth transition on hover */
 
+/* Item count styling */
+.itemCount {
+    color: black;
+    font-size: 16px;
 }
-.carousel img:hover {
-    transform:scale(1.05);
-}
+
