@@ -66,3 +66,24 @@ body{
     font-size: 16px;
 }
 
+
+.add-to-cart {
+    display: none; /* Initially hidden */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the button */
+    font-size: 11px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-align: center; /* Center text */
+    min-width: 100px; /* Ensures the button is wide enough for the text */
+    margin-top: 10px;
+    margin-left: 130px;
+    height: auto;
+}
+
+.add-to-cart:hover {
+    background-color: #218838; /* Darker green on hover */
+}

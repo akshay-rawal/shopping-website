@@ -33,6 +33,10 @@
     padding: 5px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    cursor: pointer;
+}
+#productDropdown li a:hover {
+    background-color: #adf7f8;
 }
 
 /* recommended css */
