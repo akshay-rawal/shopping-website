@@ -39,17 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCart(index, count) {
         const slide = document.querySelectorAll('.slide')[index];
         const imgSrc = slide.querySelector('img').src;
-        let cartItem = document.querySelector(`#cartList .cart-items [data-index="${index}"]`);
+        let cartItem = document.querySelector(`#cart [data-index="${index}"]`);
 
         if (!cartItem && count > 0) {
             // Create a new cart item if it doesn't exist
             cartItem = document.createElement('li');
             cartItem.setAttribute('data-index', index);
-            cartItem.innerHTML = `<img src="${imgSrc}" alt="Cart Item" class="cart-img"> <span class="cart-count">${count}</span>`;
+            cartItem.innerHTML = `<img src="${imgSrc}" alt="Cart Item" class="cart-img"> <span class="itemCount">${count}</span>`;
             cartList.appendChild(cartItem);
         } else if (cartItem && count > 0) {
             // Update existing cart item
-            cartItem.querySelector('.cart-count').textContent = count;
+            cartItem.querySelector('itemCount').textContent = count;
         } else if (cartItem && count === 0) {
             // Remove item from cart if count is 0
             cartList.removeChild(cartItem);

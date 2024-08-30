@@ -24,16 +24,7 @@ body{
     
 }
 
-/* Image styling */
-.slide img {
-    width: 50%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the area without distortion */
-    margin-left: 50px;
-    margin-top: 50px;
-    
-   
-}
+
 
 /* Controls styling */
 .controls {
@@ -68,7 +59,6 @@ body{
 
 
 .add-to-cart {
-    display: none; /* Initially hidden */
     background-color: #28a745; /* Green background */
     color: white; /* White text color */
     border: none; /* No border */
@@ -80,10 +70,22 @@ body{
     text-align: center; /* Center text */
     min-width: 100px; /* Ensures the button is wide enough for the text */
     margin-top: 10px;
-    margin-left: 130px;
+   box-sizing: border-box;
     height: auto;
+    margin-left: 27%;
+
 }
 
 .add-to-cart:hover {
     background-color: #218838; /* Darker green on hover */
+}
+
+.image-size {
+    width: 300px; /* Set a common width */
+    height: 400px; /* Set a common height */
+    object-fit: cover; /* Maintain aspect ratio and cover the dimensions */
+  align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
+
 }
