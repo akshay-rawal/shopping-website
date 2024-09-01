@@ -38,9 +38,14 @@
                     <li><a href="dropdown/footware.html">Foot Wear</a></li>
                 </ul>
             </li>
-
-            <li><a href="cart.html" id="cartLink">CART</a></li>
+            <li id="cart">
+                <a href="cart.html">CART</a>
+                <ul id="cart-list" class="dropdown-content">
+                    <!-- Items added to the cart will appear here -->
+                </ul>
         </ul>
+      
+       
         <ul class="nav-linkss">
                 <li><a href="login.html" id="loginId">LOGIN</a></li>
                  <li><a href="signup.html">SIGNUP</a></li>
@@ -54,8 +59,6 @@
     <div class="image-gallery" id = "imagegallery"></div>
  
 
-    <script src="mainImage/mainimage.js"></script>
-    <script src = "productsearch.js"></script>
 
    
         
@@ -68,9 +71,12 @@
         
 
 
+        <script src="mainImage/mainimage.js"></script>
+        <script src = "productsearch.js"></script>
 
     <script src="navbar.js"></script>
     <script src="product.js"></script>
     <script src="dropdowns.js"></script>
+    <script src="signups.js"></script>
 </body>
 </html>

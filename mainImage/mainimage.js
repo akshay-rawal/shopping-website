@@ -2,10 +2,7 @@ const images = [
   { src: "/assets/front/women.jpg", description: "Women's Clothing" },
   { src: "/assets/front/kids.jpg", description: "kids's Clothing" },
   { src: "/assets/front/accessrois.jpg", description: "Women's Accessories" },
-  {
-    src: "/assets/front/kids accessories.jpg",
-    description: "Kid's Accesssories",
-  },
+  {src: "/assets/front/kids accessories.jpg", description: "Kid's Accesssories"},
   { src: "/assets/front/mens.jpg", description: "Men's Clothing" },
   { src: "/assets/front/books.jpg", description: "Books.." },
   { src: "/assets/front/mens acc.jpg", description: "Men's Accessories" },
